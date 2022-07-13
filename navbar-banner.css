@@ -1,0 +1,823 @@
+/* DDEFAULT STYLING */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: wf_segoe-ui_normal, "Segoe UI", Segoe, "Segoe WP", Tahoma,
+    Verdana, Arial, sans-serif;
+  color: black;
+}
+
+.container {
+  /* display: none; */
+  width: 90%;
+  height: 2000px;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  /* z-index: 99999999999999999999999999999; */
+  overflow: hidden;
+}
+
+/* NAV UL-PERTAMA */
+nav {
+  /* background-color: rgb(129, 128, 128); */
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 15px;
+  box-sizing: border-box;
+  position: relative;
+  padding-bottom: 40px;
+  z-index: 999;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  position: absolute;
+}
+
+nav .ul-satu {
+  padding-left: 20px;
+  width: 59.7%;
+  flex-wrap: wrap;
+  left: 140px;
+  z-index: 90;
+}
+
+nav .ul-satu li {
+  padding: 0 0 20px 9px;
+}
+
+nav .ul-satu li a {
+  padding: 3px;
+}
+
+/* NAV UL-KEDUA */
+
+.ul-dua {
+  height: 100px;
+  right: 0px;
+  font-size: 1em;
+  top: 12px;
+  position: absolute;
+}
+
+.ul-dua li {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  align-items: baseline;
+  height: 35px;
+  width: 100%;
+  margin-left: 55px;
+}
+
+.ul-dua .arrow a {
+  background-image: url(down-arrow.png);
+  display: block;
+  width: 13px;
+  height: 13px;
+  color: black;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  margin-top: 1px;
+}
+
+.ul-dua .arrow a p {
+  text-indent: -83px;
+  margin-top: -6px;
+}
+
+.ul-dua .search a {
+  background-image: url(search.png);
+  display: block;
+  width: 13px;
+  height: 13px;
+  color: black;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.ul-dua .search a p {
+  text-indent: -50px;
+}
+
+.ul-dua .user a {
+  background-image: url(user.png);
+  display: block;
+  width: 31px;
+  height: 31px;
+  color: black;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  margin-top: -10px;
+  z-index: 10;
+}
+
+.ul-dua .user a p {
+  text-indent: -50px;
+  margin-top: 5px;
+}
+
+.ul-dua li p {
+  text-indent: -36px;
+  margin-top: -4px;
+}
+
+.ul-dua .cart a {
+  background-image: url(cart.png);
+  display: block;
+  width: 18px;
+  height: 18px;
+  color: black;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+/* NAV MORE UL KEDUA */
+
+.more {
+  display: none;
+  position: relative;
+}
+
+.hover-content {
+  display: flex;
+  justify-content: start;
+  margin-left: -15px;
+}
+
+.hover-content ul {
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  overflow-x: hidden;
+}
+
+.hover-content ul li {
+  display: flex;
+  height: auto;
+  width: 100%;
+  padding-left: 30px;
+  padding-top: 25px;
+}
+
+.hover-content ul li:last-child {
+  padding-bottom: 25px;
+}
+
+.hover-content ul li:hover {
+  background-color: rgb(210, 210, 210);
+}
+
+.more input {
+  height: 50px;
+  width: 100px;
+  position: absolute;
+  opacity: 0;
+  margin-left: -27px;
+  margin-top: -20px;
+  cursor: pointer;
+  z-index: 999999999999999999999;
+}
+
+.more input:checked ~ div:nth-child(3) ul {
+  display: flex;
+  animation: animasi-popup 0.3s;
+}
+
+@keyframes animasi-popup {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.more a img {
+  position: absolute;
+  margin-top: -13px;
+  margin-left: 35px;
+}
+
+.more a p {
+  margin-top: -17.5px;
+}
+
+.drop-menu .b {
+  display: none;
+}
+/* NAV FONTS STYLING */
+
+nav li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 420;
+  font-size: 0.8em;
+  color: rgb(79, 79, 79);
+  padding: 2px;
+}
+
+nav .mention a {
+  font-weight: 550;
+  font-size: 1.15em;
+  color: black;
+}
+
+/* LOGO */
+
+nav .logo {
+  background-image: url(logo.png);
+  display: inline-block;
+  height: 22px;
+  width: 103px;
+  text-indent: -999px;
+  position: absolute;
+  /* z-index: 9999999999999999999999999999999999; */
+}
+
+nav span {
+  display: block;
+  width: 1.5px;
+  height: 25px;
+  position: absolute;
+  background-color: black;
+  left: 147px;
+  top: 16px;
+}
+
+/* NAV ANIMASI HOVER */
+nav .ul-satu li a:hover {
+  border-bottom: 1.6px solid black;
+}
+
+nav ul li .hover-me:hover {
+  text-decoration: underline;
+}
+
+/* BANNER */
+
+.banner {
+  width: 90%;
+  height: 900px;
+  position: absolute;
+  z-index: 4;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+}
+
+/* HAMBURGER MENU MOBILE */
+.burger-logo {
+  display: none;
+  height: 20px;
+  width: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 100;
+}
+
+.burger-icon {
+  /* background-color: rebeccapurple; */
+  width: 20px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.burger-logo input {
+  z-index: 99;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+  margin-top: -45px;
+  cursor: pointer;
+}
+
+.burger-logo span {
+  transition: 0.5s;
+  height: 2px;
+  width: 20px;
+  background-color: black;
+  margin-left: -146px;
+}
+
+.burger-logo span:nth-child(2) {
+  transform-origin: 0 0;
+  margin-top: -11px;
+  height: 1.5px;
+}
+
+.burger-logo span:nth-child(4) {
+  margin-top: -5.5px;
+  height: 1.5px;
+}
+
+.burger-logo span:nth-child(3) {
+  transform-origin: 0 100%;
+}
+
+.burger-logo input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.burger-logo input:checked ~ span:nth-child(4) {
+  transform: scaleX(0);
+}
+
+.burger-logo input:checked ~ span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+nav .burger-logo input:checked ~ span:nth-child(5) {
+  display: flex;
+}
+
+nav .burger-logo .burger-icon span:nth-child(5) {
+  display: none;
+  background-color: rgb(236, 236, 236);
+  width: 100vw;
+  height: 755px;
+  position: absolute;
+  /* z-index: 9999999; */
+  margin-left: -160px;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.drop-menu-mobile {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding-left: 5px;
+  padding-top: 12px;
+  box-sizing: border-box;
+}
+
+.drop-menu-mobile .c {
+  padding: 3px;
+  padding-bottom: 26.5px;
+}
+
+.drop-menu-mobile .c {
+  font-size: 1.1em;
+}
+
+.search-mobile a {
+  background-image: url(search.png);
+  width: 13px;
+  height: 13px;
+  color: black;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  text-indent: -199px;
+  margin-left: 44px;
+  margin-top: 5px;
+  z-index: 94;
+}
+
+/* SEARCH ICON MOBILE */
+.anak {
+  position: absolute;
+  width: 95%;
+  height: 35px;
+  margin-top: -5px;
+  overflow-x: hidden;
+  display: none;
+  z-index: 96;
+}
+
+.anak span {
+  display: none;
+}
+
+.anak span input {
+  width: 74vw;
+  height: 20px;
+  margin-top: -15px;
+  position: absolute;
+  padding: 5px;
+  margin-left: -90px;
+  display: none;
+}
+
+.mobile-box {
+  position: absolute;
+  left: 45px;
+  opacity: 0;
+  display: none;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  z-index: 97;
+  top: 4px;
+}
+
+.anak img {
+  width: 14px;
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 9px;
+}
+
+.anak .mobile-box:checked ~ span {
+  display: block;
+}
+
+/* DOWNLOAD CENTER MOBILE */
+
+.download-mobile {
+  width: 120vw;
+  /* background-color: rgb(199, 162, 88); */
+  left: 0;
+  display: none;
+  height: 345px;
+  position: absolute;
+  z-index: 99;
+}
+
+.download-mobile ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(240, 240, 240);
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
+  position: absolute;
+  border-bottom: 1.5px solid black;
+}
+
+.download-mobile ul li {
+  padding-left: 16px;
+}
+
+.download-mobile ul li a {
+  text-decoration: none;
+  font-weight: 350;
+}
+
+.button-download-mobile input {
+  position: absolute;
+  left: 0px;
+  top: 40px;
+  width: 160px;
+  height: 160px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 99;
+  display: none;
+}
+
+.button-download-mobile p {
+  display: none;
+  width: 120vw;
+  /* background-color: red; */
+  border-top: 2px solid rgb(247, 247, 247);
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 17px;
+  font-weight: 570;
+  font-size: 0.95em;
+}
+
+.button-download-mobile input:checked ~ span {
+  display: flex;
+  animation: animasi-popup 0.3s;
+}
+
+.button-download-mobile img {
+  position: absolute;
+  top: 67px;
+  left: 145px;
+  /* z-index: 0; */
+}
+
+.button-download-mobile input:checked ~ img {
+  transform: rotate(180deg);
+}
+
+/* ALL MICROSOFT */
+
+.allms {
+  position: absolute;
+  background-color: rebeccapurple;
+  width: 81vw;
+  height: 0px;
+  right: 40px;
+  z-index: 999;
+  font-size: 0.8em;
+  /* display: none; */
+}
+
+.allms input {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  opacity: 0;
+  right: 270px;
+  top: -110px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.allms span {
+  height: 514px;
+  background-color: rgb(240, 240, 240);
+  display: none;
+  width: 102%;
+  overflow: hidden;
+  position: absolute;
+  margin-left: -25px;
+  display: none;
+  border: 1px solid rgb(215, 215, 215);
+}
+
+.allms .head ul {
+  padding: 10px 0;
+  list-style: none;
+  display: flex;
+  /* background-color: yellow; */
+  border-bottom: 1px solid rgb(220, 219, 219);
+  width: 82vw;
+  justify-content: start;
+  padding-left: 15px;
+  padding-bottom: 13px;
+}
+
+.allms .head ul li {
+  margin: 0 25px;
+  margin-top: 4px;
+  /* background-color: rebeccapurple; */
+}
+
+.allms input:checked ~ span {
+  display: flex;
+  animation: animasi-popup 0.3s;
+}
+
+.allms .footer {
+  bottom: -64px;
+  position: absolute;
+  width: 101%;
+  left: 0;
+  background-color: rgb(219, 219, 219);
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.content .footer a {
+  text-decoration: none;
+}
+
+.content {
+  width: 82vw;
+  position: absolute;
+  display: flex;
+  height: 450px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.content .cs {
+  /* background-color: rebeccapurple; */
+  height: 430px;
+  margin-top: 70px;
+  width: 190px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.content .cs li {
+  margin-bottom: 26px;
+}
+
+.content .cs li a {
+  text-decoration: none;
+}
+
+.content .cs li a:hover {
+  text-decoration: underline;
+}
+
+.content .cs .header {
+  margin-top: 20px;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.content .content-1 {
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+/* SEARCH ICON DESKTOP*/
+
+.search-box {
+  height: 1px;
+  width: 90vw;
+  margin-left: 70px;
+  /* background-color: gold; */
+  position: absolute;
+  top: 100px;
+  z-index: 999;
+}
+
+.search-box .tutup {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-box .tutup .desktop-box {
+  order: 2;
+  margin-right: 240px;
+  margin-top: -116px;
+  width: 70px;
+  height: 70px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.search-box .tutup span {
+  height: 1px;
+  width: 78.5vw;
+  margin-left: -50px;
+}
+
+.search-box .tutup span input {
+  width: 84%;
+  height: 35px;
+  margin-left: 55px;
+  display: none;
+  /* z-index: 99; */
+  margin-top: -90px;
+}
+
+.search-box .tutup .desktop-box:checked ~ span:last-child input {
+  display: flex;
+}
+
+.banner-content {
+  /* background-color: gold; */
+  width: 60%;
+  position: absolute;
+  height: 25%;
+  margin-left: 80px;
+  margin-top: -300px;
+  z-index: 2;
+}
+
+.banner-content p {
+  position: absolute;
+}
+
+.banner-content p:first-child {
+  margin-top: 30px;
+  font-size: 2.7em;
+  font-weight: 350;
+}
+
+.banner-content p:nth-child(2) {
+  margin-top: 105px;
+  font-size: 0.9em;
+}
+
+.banner-content input {
+  margin-top: 135px;
+  width: 130px;
+  height: 45px;
+  border-color: black;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.banner-content input:active {
+  background-color: rgb(122, 122, 122);
+  text-decoration: underline;
+}
+
+/* TOP DOWNLOAD CATEGORIES*/
+
+.top-download-text {
+  width: 100vw;
+  background-color: rebeccapurple;
+  position: absolute;
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 2.2em;
+  font-weight: 200;
+  padding-top: 82px;
+  margin-left: -80px;
+}
+
+.list-topdownload {
+  /* background-color: cadetblue; */
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  width: 82vw;
+  margin: 0 10%;
+  margin-left: 50px;
+  margin-top: 178px;
+}
+
+.list-topdownload li {
+  /* background-color: firebrick; */
+  padding: 10px 50px 10px 50px;
+  margin: 0 30px 50px 30px;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-topdownload li p {
+  width: 210px;
+  /* background-color: pink; */
+  text-align: center;
+}
+
+.list-topdownload li p:first-of-type {
+  padding-bottom: 30px;
+}
+
+.list-topdownload li p:nth-child(2) {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.list-topdownload li:hover {
+  background-color: rgb(231, 231, 231);
+}
+
+.list-topdownload img {
+  width: 70px;
+}
+
+/* SHOP NOW MENU TABLET to MOBILE */
+
+.banner-bawah {
+  margin-left: 50px;
+  width: 91%;
+}
+
+.button-shop {
+  width: 100vw;
+  /* background-color: pink; */
+  height: 200px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.bungkus-satu {
+  /* background-color: royalblue; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.button-shop input {
+  margin-top: 20px;
+  width: 130px;
+  height: 45px;
+  border-color: black;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.button-shop p:first-child {
+  font-size: 2em;
+  font-weight: 400;
+}

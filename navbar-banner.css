@@ -270,6 +270,7 @@ nav ul li .hover-me:hover {
   height: 900px;
   position: absolute;
   z-index: 4;
+  overflow-x: hidden;
 }
 
 .banner-image {
@@ -722,7 +723,7 @@ nav .burger-logo .burger-icon span:nth-child(5) {
 
 .top-download-text {
   width: 100vw;
-  background-color: rebeccapurple;
+  background-color: rgb(131, 153, 51);
   position: absolute;
   z-index: 101;
   display: flex;

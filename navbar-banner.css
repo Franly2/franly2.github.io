@@ -11,7 +11,7 @@
   /* display: none; */
   width: 90%;
   height: 2000px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(222, 0, 0);
   margin: auto;
   /* z-index: 99999999999999999999999999999; */
   overflow: hidden;
@@ -267,10 +267,11 @@ nav ul li .hover-me:hover {
 
 .banner {
   width: 90%;
-  height: 900px;
+  height: 1700px;
   position: absolute;
   z-index: 4;
-  /* overflow: hidden; */
+  overflow: hidden;
+  margin-top: 0px;
 }
 
 .banner-image {

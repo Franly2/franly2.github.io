@@ -1,49 +1,6 @@
-@media screen and (max-width: 1399px) {
-  nav .cart p {
-    display: none;
-  }
-
-  nav .cart {
-    margin-left: 15px;
-    margin-right: -45px;
-  }
-
-  nav .user p {
-    display: none;
-  }
-
-  nav .search p {
-    display: none;
-  }
-  nav .arrow {
-    margin-right: -20px;
-    margin-top: 2px;
-  }
-
-  nav ul:first-of-type {
-    margin-left: 20px;
-  }
-
-  nav .logo-container {
-    margin-left: 20px;
-  }
-
-  nav span {
-    margin-left: 20px;
-  }
-
-  .allms input {
-    right: 162px;
-    top: -100px;
-    width: 105px;
-    height: 105px;
-  }
-
-  .search-box .tutup .desktop-box {
-    margin-right: 155px;
-    margin-top: -81px;
-    width: 20px;
-    height: 20px;
+@media screen and (max-width: 1414px) {
+  .banner-bawah {
+    margin-top: -500px;
   }
 }
 
@@ -75,6 +32,11 @@
     width: 20px;
     height: 20px;
   }
+
+  .banner-bawah {
+    margin-left: 70px;
+    margin-top: -530px;
+  }
 }
 
 @media screen and (max-width: 1219px) {
@@ -101,6 +63,11 @@
 
   .drop-menu .b2 {
     display: inline;
+  }
+
+  .banner-bawah {
+    margin-left: 55px;
+    margin-top: -570px;
   }
 }
 
@@ -137,13 +104,18 @@
     margin-left: 0;
   }
 
-  .banner-bawah {
-    margin-left: 50px;
-    width: 82%;
+  .list-topdownload {
+    margin: 178px auto;
   }
+  .banner-bawah {
+    margin-left: 0px;
+    margin-top: -600px;
+  }
+}
 
-  .banner-bawah .banner-content {
-    margin-top: -230px;
+@media screen and (max-width: 1061px) {
+  .banner-bawah {
+    margin-top: -300px;
   }
 }
 
@@ -170,14 +142,9 @@
     margin-left: -0px;
     width: 85%;
   }
-
-  .banner-content {
-    margin-top: -240px;
-    margin-left: 40px;
-  }
 }
 
-@media screen and (max-width: 812px) {
+@media screen and (max-width: 813px) {
   .logo {
     margin: 0 42.5%;
     width: 100vw;
@@ -305,6 +272,35 @@
 
   .button-shop {
     display: flex;
+  }
+
+  .banner-bawah {
+    margin-top: -20px;
+  }
+
+  .banner-bawah img {
+    margin-top: 20p;
+  }
+  .button-shop .bungkus-satu {
+    margin-top: -170px;
+  }
+
+  .top-download-text {
+    top: 580px;
+  }
+
+  .list-topdownload {
+    margin-top: -10px;
+  }
+}
+
+@media screen and (max-width: 708px) {
+  .banner-bawah {
+    margin-top: 1030px;
+  }
+
+  .banner-bawah img {
+    margin-top: 20px;
   }
 }
 

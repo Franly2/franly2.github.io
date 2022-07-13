@@ -10,7 +10,7 @@
 .container {
   /* display: none; */
   width: 90%;
-  height: 4000px;
+  height: 2000px;
   background-color: rgb(255, 255, 255);
   margin: auto;
   /* z-index: 99999999999999999999999999999; */
@@ -270,7 +270,7 @@ nav ul li .hover-me:hover {
   height: 900px;
   position: absolute;
   z-index: 4;
-  overflow-x: hidden;
+  /* overflow: hidden; */
 }
 
 .banner-image {

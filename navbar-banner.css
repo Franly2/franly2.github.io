@@ -269,7 +269,7 @@ nav ul li .hover-me:hover {
   width: 90%;
   height: 2900px;
   position: absolute;
-  z-index: 4;
+  z-index: 7;
   overflow: hidden;
   margin-top: 0px;
 }
@@ -305,7 +305,7 @@ nav ul li .hover-me:hover {
   width: 24px;
   height: 24px;
   opacity: 0;
-  margin-top: -45px;
+  margin-top: -25px;
   cursor: pointer;
 }
 
@@ -393,15 +393,19 @@ nav .burger-logo .burger-icon span:nth-child(5) {
   z-index: 94;
 }
 
+.search-mobile p {
+  display: none;
+}
+
 /* SEARCH ICON MOBILE */
 .anak {
-  position: absolute;
   width: 95%;
   height: 35px;
-  margin-top: -5px;
+  margin-top: -25px;
+  margin-left: 150px;
   overflow-x: hidden;
   display: none;
-  z-index: 96;
+  z-index: 99999;
 }
 
 .anak span {
@@ -409,36 +413,38 @@ nav .burger-logo .burger-icon span:nth-child(5) {
 }
 
 .anak span input {
-  width: 74vw;
+  width: 88vw;
   height: 20px;
-  margin-top: -15px;
+  margin-top: -20px;
   position: absolute;
   padding: 5px;
-  margin-left: -90px;
+  margin-left: 15px;
   display: none;
 }
 
 .mobile-box {
   position: absolute;
-  left: 45px;
-  opacity: 0;
-  display: none;
-  cursor: pointer;
   width: 25px;
   height: 25px;
-  z-index: 97;
-  top: 4px;
+  margin-left: -105px;
+  margin-top: -15px;
+  z-index: 999;
+  opacity: 0;
 }
 
 .anak img {
   width: 14px;
   position: absolute;
-  margin-left: 50px;
-  margin-top: 9px;
+  margin-left: -100px;
+  margin-top: -10px;
+  z-index: 9;
 }
 
 .anak .mobile-box:checked ~ span {
   display: block;
+  position: absolute;
+  z-index: 99999999;
+  margin-left: -90px;
 }
 
 /* DOWNLOAD CENTER MOBILE */
@@ -477,12 +483,12 @@ nav .burger-logo .burger-icon span:nth-child(5) {
 .button-download-mobile input {
   position: absolute;
   left: 0px;
-  top: 40px;
+  top: 55px;
   width: 160px;
   height: 160px;
   opacity: 0;
   cursor: pointer;
-  z-index: 99;
+  z-index: 6;
   display: none;
 }
 
@@ -505,7 +511,7 @@ nav .burger-logo .burger-icon span:nth-child(5) {
 
 .button-download-mobile img {
   position: absolute;
-  top: 67px;
+  top: 74px;
   left: 145px;
   /* z-index: 0; */
 }
@@ -826,4 +832,8 @@ nav .burger-logo .burger-icon span:nth-child(5) {
   overflow-x: hidden;
   /* background-color: pink; */
   height: 420px;
+}
+
+.checkbox img {
+  margin-top: 100px;
 }

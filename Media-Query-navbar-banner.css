@@ -144,7 +144,7 @@
   }
 }
 
-@media screen and (max-width: 813px) {
+@media screen and (max-width: 880px) {
   .logo {
     margin: 0 42.5%;
     width: 100vw;
@@ -311,7 +311,14 @@
 
   .banner-atas .hilang {
     margin-left: -500px;
-    /* display: none; */
+  }
+
+  .ul-dua .user a p {
+    display: none;
+  }
+
+  .ul-dua .cart a p {
+    display: none;
   }
 }
 

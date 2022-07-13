@@ -11,7 +11,7 @@
   /* display: none; */
   width: 90%;
   height: 2000px;
-  background-color: rgb(222, 0, 0);
+  /* background-color: rgb(222, 0, 0); */
   margin: auto;
   /* z-index: 99999999999999999999999999999; */
   overflow: hidden;
@@ -724,7 +724,7 @@ nav .burger-logo .burger-icon span:nth-child(5) {
 
 .top-download-text {
   width: 100vw;
-  background-color: rgb(131, 153, 51);
+  /* background-color: rgb(131, 153, 51); */
   position: absolute;
   z-index: 101;
   display: flex;

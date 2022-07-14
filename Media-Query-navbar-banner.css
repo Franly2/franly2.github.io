@@ -438,7 +438,7 @@
   }
 
   .footer-last span {
-    background-color: hotpink;
+    /* background-color: hotpink; */
     width: 100%;
     display: flex;
     justify-content: space-between;

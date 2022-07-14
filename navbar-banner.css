@@ -8,12 +8,10 @@
 }
 
 .container {
-  /* display: none; */
   width: 90%;
   height: 2000px;
-  /* background-color: rgb(222, 0, 0); */
+  overflow: hidden;
   margin: auto;
-  /* z-index: 99999999999999999999999999999; */
   overflow: hidden;
 }
 
@@ -267,7 +265,7 @@ nav ul li .hover-me:hover {
 
 .banner {
   width: 90%;
-  height: 2900px;
+  /* height: 2000px; */
   position: absolute;
   z-index: 7;
   overflow: hidden;
@@ -749,7 +747,7 @@ nav .burger-logo .burger-icon span:nth-child(5) {
   flex-wrap: wrap;
   list-style: none;
   justify-content: center;
-  width: 82vw;
+  width: 89vw;
   margin: 0 10%;
   margin-left: 50px;
   margin-top: 178px;
@@ -908,7 +906,7 @@ nav .burger-logo .burger-icon span:nth-child(5) {
   /* background-color: gold; */
   display: flex;
   align-items: center;
-  width: 16 vw;
+  width: 16vw;
   justify-content: space-around;
   margin-left: 80px;
   position: absolute;
@@ -936,7 +934,7 @@ nav .burger-logo .burger-icon span:nth-child(5) {
 
 .footer-container {
   position: relative;
-  background-color: pink;
+  /* background-color: pink; */
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -946,7 +944,7 @@ nav .burger-logo .burger-icon span:nth-child(5) {
 }
 
 .footer-container .l1 {
-  background-color: rebeccapurple;
+  /* background-color: rebeccapurple; */
 }
 
 .footer-container ul li {
@@ -954,24 +952,24 @@ nav .burger-logo .burger-icon span:nth-child(5) {
 }
 
 .footer-container .l2 {
-  background-color: rgb(153, 61, 51);
+  /* background-color: rgb(153, 61, 51); */
 }
 
 .footer-container .l3 {
-  background-color: rgb(116, 153, 51);
+  /* background-color: rgb(116, 153, 51); */
 }
 
 .footer-container .l4 {
-  background-color: rgb(51, 153, 90);
+  /* background-color: rgb(51, 153, 90); */
   margin-top: -20px;
 }
 
 .footer-container .l5 {
-  background-color: rgb(63, 51, 153);
+  /* background-color: rgb(63, 51, 153); */
 }
 
 .footer-container .l6 {
-  background-color: rgb(153, 51, 129);
+  /* background-color: rgb(153, 51, 129); */
 }
 
 .footer-container ul li:first-child {
@@ -984,7 +982,7 @@ nav .burger-logo .burger-icon span:nth-child(5) {
 }
 
 .footer-last {
-  /* background-color: firebrick; */
+  background-color: rgb(210, 210, 210);
   bottom: -80px;
   position: absolute;
   display: flex;
@@ -1018,4 +1016,9 @@ nav .burger-logo .burger-icon span:nth-child(5) {
 
 .footer-container a {
   font-size: 0.8em;
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
 }

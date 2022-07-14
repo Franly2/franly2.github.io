@@ -845,10 +845,9 @@ nav .burger-logo .burger-icon span:nth-child(5) {
   display: none;
 }
 
-/*  */
-/*  */
-/*  */
-/*  */
+.border-bottom {
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
 
 .button-shop-tiga {
   width: 50%;
@@ -934,7 +933,7 @@ nav .burger-logo .burger-icon span:nth-child(5) {
 
 .footer-container {
   position: relative;
-  /* background-color: pink; */
+  background-color: rgb(210, 210, 210);
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -945,6 +944,7 @@ nav .burger-logo .burger-icon span:nth-child(5) {
 
 .footer-container .l1 {
   /* background-color: rebeccapurple; */
+  padding-left: 40px;
 }
 
 .footer-container ul li {
@@ -961,7 +961,7 @@ nav .burger-logo .burger-icon span:nth-child(5) {
 
 .footer-container .l4 {
   /* background-color: rgb(51, 153, 90); */
-  margin-top: -20px;
+  margin-top: 20px;
 }
 
 .footer-container .l5 {
@@ -988,7 +988,7 @@ nav .burger-logo .burger-icon span:nth-child(5) {
   display: flex;
   justify-content: space-between;
   width: 100vw;
-  padding: 20px 30px;
+  padding: 30px 30px 20px 30px;
   box-sizing: border-box;
   z-index: 9999;
 }
@@ -1015,7 +1015,7 @@ nav .burger-logo .burger-icon span:nth-child(5) {
 }
 
 .footer-container a {
-  font-size: 0.8em;
+  font-size: 0.7em;
   text-decoration: none;
 }
 

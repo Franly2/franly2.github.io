@@ -657,7 +657,7 @@ nav .burger-logo .burger-icon span:nth-child(5) {
 
 .search-box .tutup .desktop-box {
   order: 2;
-  margin-right: 240px;
+  margin-right: 160px;
   margin-top: -116px;
   width: 70px;
   height: 70px;
@@ -763,6 +763,7 @@ nav .burger-logo .burger-icon span:nth-child(5) {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 99999;
 }
 
 .list-topdownload li p {
@@ -830,10 +831,191 @@ nav .burger-logo .burger-icon span:nth-child(5) {
   margin-left: 70px;
   margin-top: -780px;
   overflow-x: hidden;
-  /* background-color: pink; */
-  height: 420px;
 }
 
 .checkbox img {
   margin-top: 100px;
+}
+
+.button-shop-dua {
+  width: 100%;
+  /* background-color: rgb(0, 255, 0); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  display: none;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+
+.button-shop-tiga {
+  width: 50%;
+  /* background-color: rgb(0, 255, 0); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  display: flex;
+  margin-top: -700px;
+  margin-left: 80px;
+  z-index: 9;
+  position: absolute;
+}
+
+.button-shop-tiga .bungkus-dua {
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-shop-tiga .bungkus-dua > * {
+  margin-bottom: 20px;
+}
+
+.button-shop-tiga .bungkus-dua p:last-child {
+  margin-bottom: 0;
+  display: none;
+}
+
+.button-shop-tiga .bungkus-dua .p-bawah {
+  margin-bottom: 7px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.button-shop-tiga .bungkus-dua .p-atas {
+  font-size: 2.2em;
+}
+
+.button-shop-tiga .bungkus-dua input {
+  width: 130px;
+  height: 45px;
+  border-color: black;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.sosmed {
+  /* background-color: gold; */
+  display: flex;
+  align-items: center;
+  width: 16 vw;
+  justify-content: space-around;
+  margin-left: 80px;
+  position: absolute;
+  z-index: 999;
+  margin-top: -300px;
+}
+
+.sosmed a:first-of-type {
+  background-image: url(facebook.png);
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  text-indent: -999px;
+}
+
+.sosmed a:last-of-type {
+  background-image: url(twit.png);
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  text-indent: -999px;
+}
+
+/* FOOTER */
+
+.footer-container {
+  position: relative;
+  background-color: pink;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100vw;
+  margin-top: -200px;
+}
+
+.footer-container .l1 {
+  background-color: rebeccapurple;
+}
+
+.footer-container ul li {
+  padding: 10px;
+}
+
+.footer-container .l2 {
+  background-color: rgb(153, 61, 51);
+}
+
+.footer-container .l3 {
+  background-color: rgb(116, 153, 51);
+}
+
+.footer-container .l4 {
+  background-color: rgb(51, 153, 90);
+  margin-top: -20px;
+}
+
+.footer-container .l5 {
+  background-color: rgb(63, 51, 153);
+}
+
+.footer-container .l6 {
+  background-color: rgb(153, 51, 129);
+}
+
+.footer-container ul li:first-child {
+  margin-bottom: 20px;
+}
+
+.footer-container ul {
+  list-style: none;
+  width: 210px;
+}
+
+.footer-last {
+  /* background-color: firebrick; */
+  bottom: -80px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  z-index: 9999;
+}
+
+.footer-last span {
+  /* background-color: hotpink; */
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-last .world {
+  background-image: url(world.png);
+  background-repeat: no-repeat;
+  text-indent: 40px;
+  /* background-color: gainsboro; */
+  height: 30px;
+  display: block;
+}
+
+.footer-last a {
+  font-size: 0.8em;
+}
+
+.footer-container a {
+  font-size: 0.8em;
 }

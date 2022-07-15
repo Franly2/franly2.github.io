@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+}
+
+.container {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  height: 1500px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 100vh 140px;
+  grid-template-areas:
+    "profile pict pict"
+    "project project project"
+    "main main main";
+}
+
+.a {
+  /* background-color: red; */
+  /* background-color: rgb(173, 173, 173); */
+  grid-area: profile;
+}
+
+.b {
+  /* background-image: radial-gradient( fra rgb(255, 0, 0), rgb(255, 0, 144)); */
+  /* background-color: red; */
+  grid-area: pict;
+  position: relative;
+}
+
+.c {
+  background-color: rgb(111, 111, 111);
+  grid-area: project;
+  z-index: 5;
+}
+
+.d {
+  background-color: rebeccapurple;
+  grid-area: main;
+  z-index: 5;
+}
+
+.a .link {
+  /* background-color: gold; */
+  padding: 20px;
+}
+
+.link a {
+  padding-right: 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: rgb(255, 0, 0);
+}
+
+.link a:last-child {
+  color: rgb(255, 0, 144);
+}
+
+.a .data-diri {
+  /* background-color: rgb(134, 134, 134); */
+  padding: 40px 0 0 120px;
+}
+
+.a .data-diri p {
+  padding-bottom: 6px;
+}
+
+.a .data-diri p:last-child {
+  /* background-color: rgb(0, 136, 255); */
+  padding-top: 100px;
+  margin-left: -60px;
+}
+
+.b img:first-child {
+  z-index: 3;
+  position: absolute;
+  top: 7px;
+}
+
+.b img:nth-child(2) {
+  position: absolute;
+  margin-left: 400px;
+  z-index: 2;
+  transform: rotate(-45deg);
+  animation: ttd 2s;
+}
+
+.b span:nth-child(4) {
+  position: absolute;
+  z-index: 1;
+  width: 900px;
+  height: 800px;
+  padding-right: 200px;
+  padding-bottom: 10px;
+  background-image: radial-gradient(rgb(255, 0, 0), rgb(255, 0, 144));
+  border-radius: 20px;
+  transform: rotate(-45deg);
+  box-shadow: 5px 5px 20px black;
+  animation: ttd 2s;
+}
+
+.b span:nth-child(3) {
+  position: absolute;
+  width: 850px;
+  height: 770px;
+  padding-right: 200px;
+  padding-bottom: 10px;
+  background-color: transparent;
+  transform: rotate(-45deg);
+  animation: color 5s alternate infinite;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 576px) {
+  .container {
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 30vh 70vh 140px;
+    grid-template-areas:
+      "profile profile profile"
+      "pict pict pict"
+      "project project project"
+      "main main main";
+  }
+
+  .b img:nth-child(2) {
+    width: 100px;
+  }
+
+  .a .data-diri p:last-child {
+    width: 160px;
+    padding-left: 360px;
+    padding-top: 170px;
+    z-index: 99;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .a .data-diri {
+    padding: 40px 0 0 50px;
+  }
+}
+
+/* ANIMATION */
+
+@keyframes ttd {
+  0% {
+    transform: translateX(1000px) translateY(-1000px) rotate(-45deg);
+  }
+
+  100% {
+    transform: translateX(0) translateY(0) rotate(-45deg);
+  }
+}
+
+@keyframes color {
+  0% {
+    border-top: 5px solid rgb(0, 0, 0);
+    transform: translateX(200px) translateY(-200px) rotate(-45deg);
+  }
+
+  100% {
+    border-top: 5px solid rgb(255, 0, 0);
+    transform: translateX(0) translateY(0) rotate(-45deg);
+  }
+}

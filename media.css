@@ -112,3 +112,15 @@
         padding-right: 15%;
     }
   }
+
+  @media screen and (max-width: 438px) {
+    .footer {
+      align-items: flex-start;
+  }
+  .footer-content{
+    font-size: 12px;   
+}
+.title{
+  font-size: 23px;
+}
+  }

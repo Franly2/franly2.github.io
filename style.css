@@ -3,7 +3,6 @@ html {
 }
 
 body{
-   overflow-x: hidden;
    background-color: #fff9f0;
    
 }
@@ -49,6 +48,7 @@ body{
       "foot foot";
     grid-template-columns: 50% 50%;
     grid-template-rows:  1fr auto auto;
+    overflow-x: hidden;
   }
 
   .x div {

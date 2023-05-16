@@ -1,0 +1,76 @@
+.g2{
+    grid-area: photo;
+    /* background-color: red; */
+    position: relative;
+}
+
+.g2 img {
+    transform: scale(.85);
+    margin-top: -180px;
+    margin-right: -180px;
+}
+
+.g3 {
+    width: 100%;
+    /* background-color: red; */
+    grid-area: port;
+    font-size: 50px;
+    padding-top: 70px;
+    padding-right: 60%;
+}
+.carousel-item {
+    position: relative;
+}
+
+
+#penjelasan {
+   background-color: aqua;
+   position: absolute;
+   top: 100px;
+}
+
+.detail {
+    position: absolute;
+    right: 150px;
+    top: 0;
+    z-index: 9;
+    width: 90px;
+    height: 60px;
+}
+
+.detail2a {
+    position: absolute;
+    right: 150px;
+    top: 0;
+    z-index: 9;
+    width: 200px;
+    height: 60px;
+}
+
+.detail2b {
+    position: absolute;
+    right: 150px;
+    top: 40px;
+    z-index: 9;
+    width: 250px;
+    height: 60px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #c0bab1;
+}
+
+.title{
+    font-size: 33px;
+    font-weight: 800;
+}
+
+.footer-content{
+    font-size: 17px;   
+}
+

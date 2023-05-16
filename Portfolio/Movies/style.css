@@ -1,0 +1,30 @@
+*{
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+.container{
+    /* background-image: linear-gradient(to right, #360033
+    , #0b8793); */
+    background-color: transparent;
+}
+
+body{
+    background-image: linear-gradient(to right, #360033
+    , #480129);
+}
+
+.glass{
+    background-color: #7f2e4d;
+}
+
+.tombol{
+    background-color: rgb(102, 67, 105);
+}
+
+.note{
+    color: white;
+    padding-left: 5px;
+}
+
+
+

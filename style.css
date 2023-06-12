@@ -2,111 +2,115 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
-   background-color: #fff9f0;
-   
+body {
+  background-color: #fff9f0;
 }
 
-*  {
-    padding: 0;
-    margin :0;
-    font-family: 'Montserrat Alternates', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
-.glass{
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+.glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
-  border:1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .navbar {
-  /* position: fixed;
-  width: 100vw; */
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 0 0 10px 10px;
-  border:1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   z-index: 2000;
 }
 
-.zIndex{
+.zIndex {
   z-index: 100;
 }
 
 .x {
   padding-top: 100px;
-    display: grid;
-    width: 100vw;
-    grid-template-areas:
-      "profile photo"
-      "port port"
-      "foot foot";
-    grid-template-columns: 50% 50%;
-    grid-template-rows:  1fr auto auto;
-    overflow-x: hidden;
-  }
+  display: grid;
+  width: 100vw;
+  grid-template-areas:
+    "profile photo"
+    "port port"
+    "form form"
+    "foot foot";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr auto auto;
+  overflow-x: hidden;
+}
 
-  .x div {
-    /* background-color: hotpink; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .x div:nth-child(even) {
-    /* background-color: blueviolet; */
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
+.x div {
+  /* background-color: hotpink; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .g1 span{
-    /* background-color: pink; */
-    display: flex;
-    flex-direction: column;
-  }
+.x div:nth-child(even) {
+  /* background-color: blueviolet; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
 
-.g1{
-    padding-left: 100px;
-    grid-area: profile;
+.g1 span {
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: column;
+}
+
+.g1 {
+  padding-left: 100px;
+  grid-area: profile;
 }
 
 .g1 span .p1 {
-    font-size: 70px;
-    width: 60%;
+  font-size: 70px;
+  width: 60%;
 }
 
 .g1 span .p2 {
-    font-size: 17px;
-    width: 55%;
+  font-size: 17px;
+  width: 55%;
 }
 
 .g1 .cont {
-    padding-top: 7%;
-    display: flex;
-    justify-content: flex-start;
-    /* background: burlywood; */
+  padding-top: 7%;
+  display: flex;
+  justify-content: flex-start;
+  /* background: burlywood; */
 }
 
-.g1 .cont :nth-child(2){
-    background-color: #eab7b7;
+.g1 .cont :nth-child(2) {
+  background-color: #eab7b7;
 }
 
-.g1 .cont :nth-child(3){
-    background-color: rgb(70, 18, 18);
-    color: white;
+.g1 .cont :nth-child(3) {
+  background-color: rgb(70, 18, 18);
+  color: white;
 }
 
-
-.padding{
-    padding: 14px 20px 0px 20px;
-    background-color: #ad8c7d;
-    margin: 7px;
-    border-radius: 7px;
+.padding {
+  padding: 14px 20px 0px 20px;
+  background-color: #ad8c7d;
+  margin: 7px;
+  border-radius: 7px;
 }
-

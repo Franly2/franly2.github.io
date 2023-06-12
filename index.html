@@ -291,6 +291,29 @@
       </button>
     </div>
 
+    <div class="d">
+      <div class="form-content" onsubmit="sendEmail(); reset(); return false">
+        <form class="mt-5 form-container" onsubmit="sendEmail(); reset(); return false">
+          <div class="mb-3">
+            <h2 class="git">Get In Touch</h2>
+              <div class="form-floating mt-3">
+                  <input type="name" class="form-control rounded-3 name-user" id="floatingName" placeholder="Name">
+                  <label for="floatingName">Name</label>
+                </div>
+              <div class="form-floating mt-3">
+                  <input type="email" class="form-control rounded-3 email-user" id="floatingEmail" placeholder="Email">
+                  <label for="floatingEmail">Email</label>
+                </div>
+                <div class="form-floating mt-3">
+                  <textarea class="form-control rounded-3 text-user" placeholder="Type yout message here" id="floatingMsg" style="height: 170px;"></textarea>
+                  <label for="floatingMsg">Type yout message here</label>
+                </div>
+          <button type="submit" class="btn btn-primary mt-3 float-end rounded-4">Submit</button>
+        </form>
+      </div>
+  
+    </div>
+
     <div class="footer">
       <p class="title">Contact</p>
       <p class="footer-content">Gmail : franlybudipramana588@gmail.com</p>
@@ -317,5 +340,17 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          SecureToken: "5da46e87-bed8-46f6-a6b5-ee7679002af4",
+          To: "feedbackfranly@gmail.com",
+          From: "franlybudipramana588@gmail.com",
+          Subject: "Feedback",
+          Body: `Name : ${document.querySelector(".name-user").value} <br> Email : ${document.querySelector(".email-user").value} <br> ${document.querySelector(".text-user").value}`,
+        }).then((message) => alert(message));
+      }
+      </script>
   </body>
 </html>

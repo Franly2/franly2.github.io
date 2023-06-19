@@ -20,6 +20,10 @@
   .form-content {
     width: 70%;
   }
+  .g1 {
+    margin: 0;
+    padding-left: 20px;
+  }
 }
 
 @media screen and (max-width: 606px) {
